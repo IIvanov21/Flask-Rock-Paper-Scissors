@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ user_form.hidden_tag() }}
+                <h2>Please select your choice!</h2>
+                {{ user_form.choice.label }}{{ user_form.choice }}
+                <br>
+                {{ user_form.submit}} 
+                <br>
+                {{message}}
+                <h2>Score!</h2>
+                {{user_form.computer.label}}{{user_form.computer.data}}
+                {{user_form.user.label}}{{user_form.user.data}}
+
+            </form>
+           
+        </div>
+    </body>
+</html>
