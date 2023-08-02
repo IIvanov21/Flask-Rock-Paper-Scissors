@@ -1,8 +1,8 @@
 import random
 
 def play():
-	user = input("What is your choice? 'r' for rock, 'p' for paper, 's' for scissors\n")
-	computer = random.choice(['r','p','s'])
+	user = input("What is your choice? 'Rock' for rock, 'Paper' for paper, 'Scissors' for scissors\n")
+	computer = random.choice(['Rock','Paper','s'])
 	
 	print("User:" + user + " Computer:" + computer)
 
@@ -17,7 +17,7 @@ def play():
 	
 def is_win(player,opponent):
 	#return true if player wins
-		if(player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+		if(player == 'Rock' and opponent == 'Scissors') or (player == 'Scissors' and opponent == 'Paper') or (player == 'Paper' and opponent == 'Rock'):
 			return True
 		
 

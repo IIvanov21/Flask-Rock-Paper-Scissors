@@ -1,8 +1,5 @@
-from flask.helpers import url_for
 from flask.templating import render_template
-from werkzeug.utils import redirect
 from flask import Flask, render_template, request
-from wtforms import SubmitField
 from application import app
 from application.classes import RockPaperScissors
 from application.classes import Score
