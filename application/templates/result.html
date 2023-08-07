@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+
+    <h3>Game History</h3>
+    <table>
+        <tr>
+            <th>Player Choice</th>
+            <th>Computer Choice</th>
+            <th>Result</th>
+        </tr>
+        {% for game in game_history %}
+        <tr>
+            <td>{{ game.player_choice }}</td>
+            <td>{{ game.computer_choice }}</td>
+            <td>{{ game.result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
