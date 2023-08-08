@@ -10,7 +10,7 @@ userStats=Score()
 
 @app.route('/',methods=['GET','POST'])
 def game():
-    error=""
+    error="" #Present results and store messages that we can input into and pass it to to our html form.
     user_form=RockPaperScissors()
     if request.method=="POST":
         if user_form.choice.data=="None":
